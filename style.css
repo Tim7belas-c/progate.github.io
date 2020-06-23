@@ -1,0 +1,435 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Noto Sans;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.clear {
+	clear: left;
+}
+
+html {
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+.side-c {
+	width: 87%;
+	padding-top: 0px;
+	text-align: center;
+}
+
+#tim7b {
+	position: relative;
+	animation-name: kelapkelip;
+	animation-duration: 1s;
+	/* animation-delay: 1s; */
+	animation-iteration-count: infinite;
+}
+
+@keyframes kelapkelip {
+	0% {
+		border-left: 4px dashed #a515dd;
+		border-right: 4px dashed #12a031;
+		border-bottom: 3px dashed #4f44e6;
+		border-top: 3px dashed #c30f63;
+	}
+
+	25% {
+		border-left: 4px dashed #BDBDBD;
+		border-right: 4px dashed #12a031;
+		border-bottom: 3px dashed #4f44e6;
+		border-top: 3px dashed #c30f63;
+	}
+
+	50% {
+		border-left: 4px dashed #BDBDBD;
+		border-right: 4px dashed #12a031;
+		border-bottom: 3px dashed #4f44e6;
+		border-top: 3px dashed #BDBDBD;
+	}
+
+	75% {
+		border-left: 4px dashed #BDBDBD;
+		border-right: 4px dashed #BDBDBD;
+		border-bottom: 3px dashed #4f44e6;
+		border-top: 3px dashed #BDBDBD;
+	}
+
+	100% {
+		border-left: 4px dashed #BDBDBD;
+		border-right: 4px dashed #BDBDBD;
+		border-bottom: 3px dashed #BDBDBD;
+		border-top: 3px dashed #BDBDBD;
+	}
+
+}
+
+#dwi {
+	border-bottom: 2px solid #BDBDBD;
+	border-bottom-style: dashed;
+}
+
+#ketua {
+	border-top: 2px solid #BDBDBD;
+	border-top-style: dashed;
+}
+
+.side-d {
+	width: 87%;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.sidebar-l {
+	height: 80px;
+	width: 80%;
+	float: center;
+}
+
+.putar {
+	position: relative;
+	animation-name: rotation;
+	animation-duration: 40s;
+	animation-iteration-count: infinite
+}
+
+@keyframes rotation {
+	0% {
+		left: 0px;
+	}
+
+	49% {
+		left: 1200px;
+	}
+
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(60deg);
+	}
+
+	51% {
+		left: 1200px;
+	}
+
+	100% {
+		left: 0px;
+	}
+}
+
+/* body {
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+} */
+
+li {
+	list-style: none;
+}
+
+#wrapper {
+	background: url('images/bg-body.jpg');
+	height: 700px;
+	width: 100%;
+}
+
+.top-wrapper {
+	padding: 180px 0 100px 0;
+	background-image: url('images/top_en.png');
+	opacity: 0.7;
+	background-size: cover;
+	color: white;
+	text-align: center;
+}
+
+.top-wrapper h1 {
+	opacity: 0.7;
+	font-size: 45px;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+}
+
+.top-wrapper p {
+	opacity: 70;
+	margin-bottom: 3px;
+	color: white;
+}
+
+.btn-wrapper {
+	margin: 20px 0;
+}
+
+.btn-wrapper p {
+	margin: 10px 0;
+}
+
+.signup {
+	background-color: #239b76;
+}
+
+.btn {
+	padding: 12px 24px;
+	color: white;
+	display: inline-block;
+
+	border-radius: 4px;
+}
+
+.btn:hover {
+	opacity: 1;
+}
+
+.fa {
+	margin-right: 5px;
+}
+
+
+#top-bar {
+	background: #1A237E;
+	height: 50px;
+	width: 100%;
+	box-shadow: 1px 1px 2px black;
+}
+
+header {
+	background: #1A237E;
+	height: 50px;
+	width: 250px;
+	float: left;
+}
+
+header h1 {
+	color: white;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+nav {
+	height: 50px;
+	width: 500px;
+	float: right;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-top: 15px;
+}
+
+nav ul li a {
+	padding: 15px;
+	text-decoration: none;
+	color: white;
+
+}
+
+
+#row1 .box-1 {
+	height: 700px;
+	width: auto;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	border-bottom: 0.5px solid #BDBDBD;
+}
+
+#row1 .box-1 h2 {
+	padding-top: 20px;
+	margin-left: 20px;
+}
+
+#row1 .box-1 h3 {
+	padding-top: 20px;
+	margin-left: 20px;
+}
+
+#row1 .box-1 hr {
+	width: 500px;
+	margin-left: 20px;
+}
+
+#content {
+	background: #F5F5F5;
+	height: 600px;
+	width: auto;
+	font-family: SFNS display;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+	height: 300px;
+	width: 33.28%;
+	float: left;
+}
+
+.col-2 {
+	border-left: 0.5px solid #BDBDBD;
+	border-right: 0.5px solid #BDBDBD;
+}
+
+.col-1 h2,
+.col-2 h2,
+.col-3 h2 {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#content p {
+	text-align: justify;
+	margin: 10px auto;
+	width: 90%;
+}
+
+#sidebar {
+	background: rgb(118, 138, 184);
+	opacity: 1;
+	height: 400px;
+	width: 350px;
+	float: right;
+	top: 100px;
+	right: -450px;
+	position: fixed;
+	transition: 500ms ease;
+	-moz-transition: 500ms ease;
+}
+
+#toggle {
+	background: white;
+	height: 80px;
+	width: 80px;
+	margin-top: 150px;
+	margin-left: -40px;
+	border-radius: 10px;
+}
+
+#collabs {
+	background: #9E9E9E;
+	height: 50px;
+	width: 100%;
+	padding-bottom: 100px;
+	margin-bottom: 20px;
+}
+
+#collabs .partners {
+	height: 100px;
+	width: 20%;
+	float: left;
+	margin-top: 50px;
+	background: #757575;
+}
+
+#collabs .partners h2 {
+	margin-top: 35px;
+	margin-left: 40px;
+}
+
+#collabs .img-1,
+#collabs .img-2,
+#collabs .img-3,
+#collabs .img-4 {
+	height: 100px;
+	width: 20%;
+	float: left;
+	background: #757575;
+	margin-top: 50px;
+}
+
+#collabs img {
+	margin-top: 5px;
+	margin-left: 100px;
+	background: white;
+	border-radius: 100px;
+}
+
+/* Tambahkan CSS untuk lesson */
+.lesson {
+	float: left;
+	width: 30%;
+}
+
+.lesson-wrapper {
+	height: 400px;
+	padding-top: 0px;
+	margin-top: 0px;
+	background-color: #f7f7f7;
+	/* Ubah property text-align ke center */
+	text-align: center;
+}
+
+.heading {
+	padding-top: 25px;
+	padding-bottom: 50px;
+	color: #5f5d60;
+}
+
+.heading h2 {
+	font-weight: normal;
+}
+
+/* Tambahkan CSS untuk lesson-icon */
+.lesson-icon {
+	position: relative;
+	text-align: center;
+}
+
+/* Tambahkan CSS untuk tag <p> didalam lesson-icon */
+.lesson-icon p {
+	position: absolute;
+	top: 90px;
+	width: 100%;
+	color: white;
+}
+
+
+.txt-contents {
+	width: 80%;
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 15px;
+	color: #b3aeb5;
+}
+
+.footer {
+	color: #b3aeb5;
+	height: 80px;
+	padding: 30px;
+}
+
+footer img {
+	width: 60px;
+}
+
+.footer-logo {
+	float: left;
+	font-size: 32px;
+}
+
+.footer-list {
+	float: right;
+}
+
+.footer-list li {
+	float: left;
+	opacity: 0.7;
+	font-size: 10px;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+	padding: 33px 20px;
+}
+
+.footer-logo p {
+	height: 12px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 15px;
+}
